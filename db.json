@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "description": "JSON API vs типичные веб-сервисы. Мне очень нравится JSON API, так как он сразу предоставляет данные в нормализированном виде, сохраняя иерархию, а также из коробки поддерживает pagination, sorting и filtering.",
+      "img": "http://cdn.onlinewebfonts.com/svg/img_396044.png"
+    },
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "description": "JSON API vs типичные веб-сервисы. Мне очень нравится JSON API, так как он сразу предоставляет данные в нормализированном виде, сохраняя иерархию, а также из коробки поддерживает pagination, sorting и filtering.",
+      "img": "http://cdn.onlinewebfonts.com/svg/img_396044.png"
+    },
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "description": "JSON API vs типичные веб-сервисы. Мне очень нравится JSON API, так как он сразу предоставляет данные в нормализированном виде, сохраняя иерархию, а также из коробки поддерживает pagination, sorting и filtering.",
+      "img": "http://cdn.onlinewebfonts.com/svg/img_396044.png"
+    },
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "description": "JSON API vs типичные веб-сервисы. Мне очень нравится JSON API, так как он сразу предоставляет данные в нормализированном виде, сохраняя иерархию, а также из коробки поддерживает pagination, sorting и filtering.",
+      "img": "http://cdn.onlinewebfonts.com/svg/img_396044.png"
+    },
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "description": "JSON API vs типичные веб-сервисы. Мне очень нравится JSON API, так как он сразу предоставляет данные в нормализированном виде, сохраняя иерархию, а также из коробки поддерживает pagination, sorting и filtering.",
+      "img": "http://cdn.onlinewebfonts.com/svg/img_396044.png"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
