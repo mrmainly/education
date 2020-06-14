@@ -1,5 +1,4 @@
-import News_items from "./News_item";
-
+import News_Cards from "./News_Cards";
 export default function News(props) {
   return (
     <div className="Container">
@@ -10,10 +9,9 @@ export default function News(props) {
       <div className="scale__line-blue">
         <div className="scale__line-white" />
       </div>
-
       <div className="row">
         {props.postList.map((e) => (
-          <News_items text={e.description} title={e.title} img={e.img} />
+          <News_Cards text={e.description} title={e.title} img={e.img} />
         ))}
       </div>
       <style>{`
@@ -23,6 +21,7 @@ export default function News(props) {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
+    min-width: 1100px;
 }
 .scale__line-white {
     text-decoration: none;
@@ -64,11 +63,10 @@ export default function News(props) {
     justify-content: space-between;
     margin-left: 18px;
     flex-direction: row;
-    
 }
 .row__block {
-    min-width: 320px;
-    max-width: 400px;
+    min-width: 200px;
+    max-width: 340px;
 }
 .row__img{
     width: 90%;

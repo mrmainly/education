@@ -2,7 +2,7 @@ import ocul from "../../images/ocul.png";
 import logo from "../../images/logo1.png";
 export default function Navbar() {
   return (
-    <div className="container">
+    <div>
       <div className="navbarTop">
         <div className="navbarTop__left-block">
           <a className="navbar__text">DIGITAL EDUCATION</a>
@@ -28,7 +28,7 @@ export default function Navbar() {
         <div>
           <img src={logo} alt={"a logo"} className="logo" />
         </div>
-        <div>
+        <div className="menu">
           <div className="topmenu">
             <li>
               <a className="menu-title">О центре</a>
@@ -110,7 +110,11 @@ export default function Navbar() {
     }
     @media (max-width: 999px) {
         .navbarTop__right-block {
-            margin-left: 340px;
+            margin-left: 520px;
+        }
+        .menu-title {
+            margin-left: 20px;
+            margin-right: 20px;
         }
     }
     
@@ -161,7 +165,9 @@ export default function Navbar() {
             order: 2;
             align-items: center;
         }
-        
+        .navbarTop__right-block {
+          margin-left: 200px;
+      }
     }
     
     .hamburger {
@@ -188,6 +194,9 @@ export default function Navbar() {
             position: relative;
             flex-direction: row;
             margin-left: 230px;
+        }
+        .navbar__text-Search {
+          display: none;
         }
     }
     .logo {
