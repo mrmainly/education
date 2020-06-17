@@ -1,8 +1,9 @@
 import ocul from "../../images/ocul.png";
 import logo from "../../images/logo1.png";
+
 export default function Navbar() {
   return (
-    <div>
+    <div className="Nav">
       <div className="navbarTop">
         <div className="navbarTop__left-block">
           <a className="navbar__text">DIGITAL EDUCATION</a>
@@ -32,21 +33,99 @@ export default function Navbar() {
           <div className="topmenu">
             <li>
               <a className="menu-title">О центре</a>
+              <div className="submenu">
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+              </div>
             </li>
             <li>
               <a className="menu-title">Образовательная центре</a>
+              <div className="submenu">
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+              </div>
             </li>
             <li>
               <a className="menu-title">Новости</a>
+              <div className="submenu">
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+              </div>
             </li>
             <li>
               <a className="menu-title">Мунеципальные опорные центры</a>
+              <div className="submenu">
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+              </div>
             </li>
             <li>
               <a className="menu-title">расписание занятий</a>
+              <div className="submenu">
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+              </div>
             </li>
             <li>
               <a className="menu-title">Персонализированная финансирование</a>
+              <div className="submenu">
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+                <a>Дистант</a>
+              </div>
             </li>
           </div>
         </div>
@@ -56,7 +135,11 @@ export default function Navbar() {
         </div>
       </div>
       <style>{`
-    
+      .Nav {
+        max-width: 1240px;
+        min-width: 1080px;
+        margin: 0px auto;
+      }
     .navbarTop {
         display: flex;
         margin-top: 15px;
@@ -80,7 +163,6 @@ export default function Navbar() {
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-        text-decoration: none;
         outline: none;
         display: block;
         transition: .4s ease-in-out;
@@ -104,13 +186,18 @@ export default function Navbar() {
     }
     .navbarTop__left-block {
         display: flex;
+        align-items: center;
     }
     .navbarTop__right-block {
         display: flex;
+        align-items: center;
     }
     @media (max-width: 999px) {
         .navbarTop__right-block {
             margin-left: 520px;
+        }
+        .Nav{
+          min-width: 100%;
         }
         .menu-title {
             margin-left: 20px;
@@ -133,7 +220,10 @@ export default function Navbar() {
         height: 20px;
         margin-left: 20px;
     }
-    
+    .logo {
+      min-width: 50px;
+      margin-left: 20px;
+  }
     @media (max-width: 1300px) {
         .navbar__img {
             width: 30px;
@@ -144,6 +234,7 @@ export default function Navbar() {
         .navbar__img {
             width: 60px;
             height: 60px;
+            display: none;
         }
         .none {
             height: 45px;
@@ -152,11 +243,13 @@ export default function Navbar() {
             font-size: 45px;
         }
         .logo {
-            width: 100px;
+            width: 200px;
             padding-left: 50px;
         }
-        .navbar {
+        .Nav {
             flex-direction: row;
+            display: flex;
+            align-items: center;
         }
         .navbarDown {
             order: 1;
@@ -180,7 +273,7 @@ export default function Navbar() {
         width: 50px;
         height: 50px;
     }
-    .hamberger__item {
+    .hamburger__item {
         background-color: blue;
         width: 100%;
         position: relative;
@@ -199,11 +292,6 @@ export default function Navbar() {
           display: none;
         }
     }
-    .logo {
-        min-width: 50px;
-        margin-left: 20px;
-    }
-    
     .input-block__input {
         border-radius: 23.5px;
         box-sizing: border-box;
@@ -251,6 +339,8 @@ export default function Navbar() {
       width: 210px;
       background: #fafafa;
       border: 1px solid #ededed;
+      display: flex;
+      flex-direction: column;
       z-index: 5;
       visibility: hidden;
       opacity: 0;
@@ -311,6 +401,9 @@ export default function Navbar() {
             font-size: 30px;
             margin-top: 5px;
             font-weight: bold;
+        }
+        .submenu {
+          display: none;
         }
     } 
     `}</style>

@@ -2,7 +2,10 @@ import Head from "next/head";
 import Navbar from "../components/Children/Navbar";
 import Layot from "../components/Children/Layot";
 import News from "../components/Children/News";
-import Gallery from "../components/Children/Gallery";
+import Calendar from "../components/Children/Сalendar";
+import Gallery from "../components/Children/Gallery_Photo";
+import Video from "../components/Children/Video";
+import Footer from "../components/Children/Footer";
 export default function Index(props) {
   return (
     <div>
@@ -18,7 +21,10 @@ export default function Index(props) {
         <Navbar />
         <Layot />
         <News postList={props.postList} />
+        <Calendar postList={props.postList} />
         <Gallery postList={props.postList} />
+        <Video postList={props.postList} />
+        <Footer />
       </div>
     </div>
   );

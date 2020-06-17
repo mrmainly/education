@@ -1,4 +1,5 @@
 import News_Cards from "./News_Cards";
+import { ProgressBar } from "react-bootstrap";
 export default function News(props) {
   return (
     <div className="Container">
@@ -6,9 +7,7 @@ export default function News(props) {
         <h3 className="scale__title">Главные новости</h3>
         <div className="scale__btn">все новости</div>
       </div>
-      <div className="scale__line-blue">
-        <div className="scale__line-white" />
-      </div>
+      <ProgressBar now={20} variant="info" className="Progress" />
       <div className="row">
         {props.postList.map((e) => (
           <News_Cards text={e.description} title={e.title} img={e.img} />
@@ -22,6 +21,7 @@ export default function News(props) {
     flex-direction: column;
     max-width: 1200px;
     min-width: 1100px;
+    margin-top: 40px;
 }
 .scale__line-white {
     text-decoration: none;
@@ -85,7 +85,6 @@ export default function News(props) {
 @media (max-width: 600px) {
     .row {
         flex-direction: column;
-    
     }
 }
 .row__title {
