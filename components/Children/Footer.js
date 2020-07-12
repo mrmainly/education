@@ -1,6 +1,6 @@
 import logo from "../../images/logo-j.svg";
 import { ProgressBar } from "react-bootstrap";
-
+import { AiOutlineArrowRight } from "react-icons/ai";
 export default function footer() {
   return (
     <div className="Container-Footer">
@@ -26,22 +26,27 @@ export default function footer() {
             <div>
               <div className="footer__text-block">
                 <a>горячая линия</a>
+                <AiOutlineArrowRight className="footer__arrow" />
               </div>
               <div className="footer-line" />
               <div className="footer__text-block">
                 <a>РРЦ "Юные якутяне"</a>
+                <AiOutlineArrowRight className="footer__arrow" />
               </div>
               <div className="footer-line" />
               <div className="footer__text-block">
                 <a>Обращения</a>
+                <AiOutlineArrowRight className="footer__arrow" />
               </div>
               <div className="footer-line" />
               <div className="footer__text-block">
                 <a>Контакты</a>
+                <AiOutlineArrowRight className="footer__arrow" />
               </div>
               <div className="footer-line" />
               <div className="footer__text-block">
                 <a> Вопросы</a>
+                <AiOutlineArrowRight className="footer__arrow" />
               </div>
               <div className="footer-line" />
             </div>
@@ -54,22 +59,27 @@ export default function footer() {
             <div>
               <div className="footer__text-block">
                 <a>дирекция управления</a>
+                <AiOutlineArrowRight className="footer__arrow" />
               </div>
               <div className="footer-line" />
               <div className="footer__text-block">
                 <a>Центры</a>
+                <AiOutlineArrowRight className="footer__arrow" />
               </div>
               <div className="footer-line" />
               <div className="footer__text-block">
                 <a>Отделы</a>
+                <AiOutlineArrowRight className="footer__arrow" />
               </div>
               <div className="footer-line" />
               <div className="footer__text-block">
                 <a>Общественные организации</a>
+                <AiOutlineArrowRight className="footer__arrow" />
               </div>
               <div className="footer-line" />
               <div className="footer__text-block">
                 <a> Документы</a>
+                <AiOutlineArrowRight className="footer__arrow" />
               </div>
               <div className="footer-line" />
             </div>

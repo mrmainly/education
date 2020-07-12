@@ -20,7 +20,9 @@
     "react-emotion": "^10.0.0",
     "react-icons": "^3.10.0",
     "react-id-swiper": "^4.0.0",
+    "react-slick": "^0.26.1",
     "reactstrap": "^8.4.1",
+    "slick-carousel": "^1.8.1",
     "swiper": "^5.4.5",
     "use-smooth-scroll": "^1.1.1"
   }

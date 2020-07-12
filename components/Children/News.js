@@ -5,12 +5,14 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 export default function News(props) {
   const NewsArr = props.News;
   return (
-    <div className="Container">
+    <div className="news_Container">
       <div className="scale">
         <h3 className="scale__title">Главные новости</h3>
         <div className="scale__btn">Все новости</div>
       </div>
-      <ProgressBar now={20} variant="info" className="Progress" />
+      <div>
+        <ProgressBar now={20} variant="info" className="Progress" />
+      </div>
       <div className="row">
         {NewsArr.map((e) => (
           <News_Cards
